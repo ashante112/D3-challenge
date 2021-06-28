@@ -50,7 +50,7 @@ function scale(acsData, chosenAxis, xy) {
 function renderAxis(newScale, Axis, xy) {
     var posAxis = (xy === "x") ? d3.axisBottom(newScale):d3.axisLeft(newScale)
   
-    // Redner transition between xy-axis change
+    // Render transition between xy-axis change
     Axis.transition()
       .duration(1000)
       .call(posAxis);
